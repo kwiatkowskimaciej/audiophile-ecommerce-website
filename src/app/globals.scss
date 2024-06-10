@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-body {
+p {
   @include font-style(15px, 25px, normal);
   font-weight: 400;
   text-transform: none;

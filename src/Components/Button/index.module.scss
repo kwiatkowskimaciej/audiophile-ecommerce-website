@@ -1,0 +1,56 @@
+.button {
+  width: 160px;
+  height: 48px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  svg {
+    width: 20px;
+  }
+
+  &[aria-disabled='true'] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.filled {
+    border: none;
+    background-color: $orange;
+    color: $white;
+
+    &:hover:not([aria-disabled='true']),
+    &:focus {
+      background-color: $lightorange;
+    }
+  }
+
+  &.outlined {
+    border: 1px solid $black;
+    background-color: $white;
+    color: $black;
+
+    &:hover:not([aria-disabled='true']),
+    &:focus {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  &.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: $black;
+    opacity: 0.5;
+
+    &:hover:not([aria-disabled='true']),
+    &:focus {
+      color: $orange;
+    }
+  }
+}

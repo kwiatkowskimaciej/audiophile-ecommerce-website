@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+    additionalData: `@use '@/styles/variables.module.scss' as *;`,
   },
 };
 

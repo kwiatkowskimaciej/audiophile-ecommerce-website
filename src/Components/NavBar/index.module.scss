@@ -1,0 +1,30 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  max-width: 1110px;
+  height: 96px;
+  border-bottom: 1px solid mix($white, transparent, 20%);
+  margin: auto;
+
+  &.navbarContainerFooter {
+    border-bottom: none;
+  }
+}
+
+.navbarItems {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+}
+
+.navbarContainerFooter .navbarItems {
+  position: relative;
+  left: auto;
+  transform: none;
+}

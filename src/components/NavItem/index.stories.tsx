@@ -1,6 +1,6 @@
 import type { Meta as MetaObj, StoryObj } from '@storybook/react';
 
-import NavItem from '@/Components/NavItem';
+import NavItem from '@/components/NavItem';
 
 type Meta = MetaObj<typeof NavItem>;
 type Story = StoryObj<typeof NavItem>;

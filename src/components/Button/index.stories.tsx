@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import Button from '@/Components/Button';
+import Button from '@/components/Button';
 import { ChevronRightIcon } from '@heroicons/react/16/solid';
 
 const meta = {
